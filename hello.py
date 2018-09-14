@@ -72,8 +72,8 @@ def hi():
 
 
 
-# if __name__ == "__main__":
-#   app.run()
+if __name__ == "__main__":
+  app.run()
 
 # If without app.run(), need the following to Run:
 # 	export FLASK_APP=hello.py
