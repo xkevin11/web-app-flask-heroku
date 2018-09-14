@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Web Page!</title>
+<!-- 		
+		<style>
+			h3 {
+				color: red;
+				text-align: center;
+			}
+		</style>
+ -->
+ 		<link rel="stylesheet" type="text/css" href="/static/styles.css">
+	</head>
+	<body>
+		<div>
+			<h1>Taking dynamic parameter from URL</h1>
+			{% if name %}
+			  <h3>Hello {{ name }}!</h3>
+			{% else %}
+			  <h3>Hello, World!</h3>
+			{% endif %}
+		</div>
+}
+
+		<div>
+			<h1>Text Tags</h1>
+			This is some text without formatting
+			<h1 style="color: blue; text-align: center;">h1</h1>
+			<h2 style="color: #134ead">h2</h2>
+			<h3>h3 hi there my name is Kev, this is my first ever proper html page, looks crappy for now but soon I will made something awesome using the fundamentals I am learning here ;)</h3>
+			<h4>h4</h4>
+			<h5>h5</h5>
+			<h6>h6</h6>
+			<h1>h1 with style attribute</h1>
+			<p>p tag</p>
+		</div>
+
+
+		<div>
+			<h1>Lists</h1>
+			An Unordered List:
+			<ul>
+				<li>One Item</li>
+				<li>Another Item</li>
+				<li>3rd Item</li>
+			</ul>
+			An Ordered List:
+			<ol>
+				<li>First Item</li>
+				<li>Second Item</li>
+				<li>Another Item</li>
+			</ol>
+		</div>
+		
+
+		<div>
+			<h1>Image from directory</h1>
+			Here is an image from the same directory:
+			<img src="/static/earthporn.jpg" height="300" width="450"> <!-- can leave out one of them to keep ratio -->
+		</div>
+
+
+		<div>
+			<h1>Image from the web</h1>
+			Here is an image from the internet:
+			<img src="http://78.media.tumblr.com/e0eb118055eaa6c4b38dd0e603d5b0e5/tumblr_nmf7gfDebd1tq9q5vo1_500.jpg" width="25%">
+		</div>
+
+
+		<div>
+			<h1>Presidents</h1>
+			<table>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Years in Office</th>
+				</tr>
+				<tr>
+					<td>George</td>
+					<td>Washington</td>
+					<td>1789-1797</td>
+				</tr>
+				<tr>
+					<td>Kevin</td>
+					<td>Wu</td>
+					<td>2016-2018</td>
+				</tr>
+			</table>
+		</div>
+
+
+		<div>
+			<form>
+				<input type="text" placeholder="Full Name" name="name">
+				<button>Submit!</button>
+			</form>
+		</div>
+
+		<br>
+
+
+		<div id="top"> 
+			This is div <span class="name">id=top</span> 
+		</div>
+
+
+		<div id="middle"> 
+			This is div <span class="name">id=middle</span> 
+		</div>
+
+
+		<div id="bottom"> 
+			This is div <span class="name">id=bottom</span> 
+		</div>
+
+	</body>
+</html>
+
+
+

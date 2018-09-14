@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+	Hi!
+{% endblock %}
+
+
+{% block heading %}
+	Hi, {{name}}
+{% endblock %}
+
+
+{% block body %}
+	
+	<div>
+		<a href="{{ url_for('index')}}">Click Here To Go To /</a>
+	</div>
+
+{% endblock %}
+			
+
+
+
+

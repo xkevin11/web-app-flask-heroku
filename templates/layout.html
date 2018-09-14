@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% block title %}{% endblock %}</title>
+		<style>
+			div {
+				padding: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>{% block heading %}{% endblock %}</h1>
+
+		{% block body %}
+		{% endblock %}
+
+	</body>
+</html>
+

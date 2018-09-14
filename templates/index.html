@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+	Index
+{% endblock %}
+
+
+{% block heading %}
+	This is a form that sends data to /hi
+{% endblock %}
+
+
+
+{% block body %}
+	
+	<div>
+		<form action="{{url_for('hi')}}" method="post">
+			<input type="text" placeholder="Full Name" name="name">
+			<button>Submit!</button>
+		</form>
+	</div>
+	
+	<div>
+		<ul>
+			<li><a href="{{ url_for('hi')}}">{{ url_for('hi')}}</a></li>
+			<li><a href="{{ url_for('profile', username='Default')}}">{{ url_for('profile', username='Default')}}</a></li>
+		</ul>
+		
+	</div>
+
+{% endblock %}
+			
+
+
+
+
+
