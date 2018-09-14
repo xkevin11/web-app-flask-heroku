@@ -73,7 +73,7 @@ def hi():
 
 
 if __name__ == "__main__":
-  app.run()
+  app.run(host='0.0.0.0')
 
 # If without app.run(), need the following to Run:
 # 	export FLASK_APP=hello.py
